@@ -1,12 +1,13 @@
-﻿using System;
-
-namespace WindowsFormsApp2
+﻿namespace WindowsFormsApp2
 {
+  using System;
+  using System.Windows.Forms;
+
   public partial class Form2 : Form
   {
     public Form2()
     {
-      InitializeComponent();
+      this.InitializeComponent();
     }
 
     private void Button2_Click(object sender, EventArgs e)
