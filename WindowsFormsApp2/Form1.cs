@@ -21,13 +21,16 @@ namespace WindowsFormsApp2
 
     private void Button1_Click(object sender, EventArgs e)
     {
-      if (this.form2 != null && this.form2.IsDisposed)
-      {
-       this.form2 = new Form2();
-      }
+      this.Hide();
+      form2 = new Form2();
+      form2.Show();
+      form2.FormClosed += Form2_FormClosed;
       
-      this.form2.Show();
-      
+    }
+
+    private void Form2_FormClosed(object sender, FormClosedEventArgs e)
+    {
+      this.Show();
     }
   }
 }
