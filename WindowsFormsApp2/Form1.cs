@@ -16,10 +16,5 @@ namespace WindowsFormsApp2
     {
       InitializeComponent();
     }
-
-    private void Button1_Click(object sender, EventArgs e)
-    {
-      this.textBox1.Text = "Hello World!";
-    }
   }
 }
