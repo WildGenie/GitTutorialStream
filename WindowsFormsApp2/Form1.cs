@@ -20,8 +20,15 @@ namespace WindowsFormsApp2
     private void Button1_Click(object sender, EventArgs e)
     {
       this.Hide();
-      (new Form2()).Show();
+      var form2 = new Form2();
+      form2.Show();
+      form2.FormClosed += Form2_FormClosed;
       
+    }
+
+    private void Form2_FormClosed(object sender, FormClosedEventArgs e)
+    {
+      this.Show();
     }
   }
 }

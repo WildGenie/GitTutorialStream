@@ -33,20 +33,24 @@
       // 
       // metroButton1
       // 
-      this.metroButton1.Location = new System.Drawing.Point(156, 196);
+      this.metroButton1.Location = new System.Drawing.Point(208, 241);
+      this.metroButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
       this.metroButton1.Name = "metroButton1";
-      this.metroButton1.Size = new System.Drawing.Size(171, 23);
+      this.metroButton1.Size = new System.Drawing.Size(228, 28);
       this.metroButton1.TabIndex = 0;
       this.metroButton1.Text = "metroButton1";
       this.metroButton1.UseSelectable = true;
+      this.metroButton1.Click += new System.EventHandler(this.MetroButton1_Click);
       // 
       // Form3
       // 
-      this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+      this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(800, 450);
+      this.ClientSize = new System.Drawing.Size(1067, 554);
       this.Controls.Add(this.metroButton1);
+      this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
       this.Name = "Form3";
+      this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
       this.Text = "Form3";
       this.ResumeLayout(false);
 
