@@ -12,6 +12,8 @@ namespace WindowsFormsApp2
 {
   public partial class Form1 : MetroFramework.Forms.MetroForm
   {
+    private Form form2;
+    
     public Form1()
     {
       InitializeComponent();
@@ -19,8 +21,12 @@ namespace WindowsFormsApp2
 
     private void Button1_Click(object sender, EventArgs e)
     {
-      this.Hide();
-      (new Form2()).Show();
+      if (this.form2 != null && this.form2.IsDisposed)
+      {
+       this.form2 = new Form2();
+      }
+      
+      this.form2.Show();
       
     }
   }
